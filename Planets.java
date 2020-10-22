@@ -11,6 +11,7 @@ public class Planets {
 	   System.out.println("Enter a planet of the solar system: ");
 	   String planet =  sc.nextLine();
 	   double weightOnAnotherPlanet = 1;
+	   sc.close();
 	   switch (planet){
 		case "Mercury" :
 			weightOnAnotherPlanet = 0.38 * weight;

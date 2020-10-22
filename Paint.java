@@ -15,12 +15,13 @@ public class Paint {
 	 int fiveLitersBuckets = 0, oneLitersBuckets = 0;
 	 fiveLitersBuckets += area / fiveLitersAreaCover;
 	 int areaLeft = area % fiveLitersAreaCover;
+	 sc.close();
 	 oneLitersBuckets = areaLeft / oneLitersAreaCover + ( (areaLeft % oneLitersAreaCover !=0) ? 1:0) ;
 	 if (oneLitersBuckets * oneLiterPrice > fiveLitersPrice) {
 		 oneLitersBuckets = 0;
 		 fiveLitersBuckets++;
 	 }
-	 System.out.println ("It is needed " + fiveLitersBuckets + "five liters buckets and " 
+	 System.out.println ("It is needed " + fiveLitersBuckets + " five liters buckets and " 
 	 + oneLitersBuckets + " one liter buckets");
 	 }
 	 
