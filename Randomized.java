@@ -9,6 +9,7 @@ public class Randomized {
 		for(int i = 0; i < 10; i++) {
 			array[i] = sc.nextInt();
 		}
+		sc.close();
 		for(int i = 0; i < 10; i++) {
 			int randomIndex =  ( int ) (Math.random() * 10);
 			int swap = array[randomIndex];
